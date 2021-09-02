@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "immutable": "^4.0.0-rc.14",
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "redux": "^4.1.1"
   }
 }

@@ -1,11 +1,7 @@
-import { Map } from 'immutable';
+import store from './store';
+import { bugAdded, bugResolved } from './actions';
 
-let book = Map({ title: 'Harry Potter'})
+store.dispatch(bugAdded('bug 1'));
+store.dispatch(bugResolved(1));
 
-// const publish = (book) {
-// 	book.isPublished = true
-// }
-
-// publish(book);
-
-console.log(book.get("title"));
+console.log(store.getState());
